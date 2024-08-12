@@ -1,8 +1,11 @@
 body {
   background-color: #0E1323;
+  font-family: "Rubik", sans-serif;
   color: #FFFFFF; }
 
 main {
+  max-width: 425px;
+  margin: auto;
   padding: 81px 24px;
   box-sizing: border-box;
   display: flex;
@@ -34,7 +37,7 @@ main {
       width: 64px;
       border: 3px solid #FFFFFF;
       border-radius: 100%; }
-    main .report-for-div div span {
+    main .report-for-div div .report-for-span {
       display: block;
       font-size: 15px;
       font-weight: 400;
@@ -72,6 +75,16 @@ main {
       position: absolute;
       z-index: 3;
       opacity: 0.8; }
+    .report .report-background .sky-blue-background {
+      background-color: #55C2E6; }
+    .report .report-background .pink-background {
+      background-color: #FF5E7D; }
+    .report .report-background .green-background {
+      background-color: #4BCF82; }
+    .report .report-background .purple-background {
+      background-color: #7335D2; }
+    .report .report-background .yellow-background {
+      background-color: #F1C75B; }
     .report .report-background img {
       position: absolute;
       z-index: 2;
@@ -100,6 +113,51 @@ main {
         font-size: 15px;
         font-weight: 400;
         color: #BBC0FF; }
+
+@media only screen and (min-width: 750px) {
+  main {
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+    main .jeremy-robson-div {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+      height: 100%; }
+      main .jeremy-robson-div .report-for-div {
+        width: 100%;
+        padding: 38px 0px 80px 32px;
+        flex-direction: column;
+        align-items: start;
+        gap: 43px;
+        border-radius: 15px;
+        position: absolute;
+        top: 0px; }
+        main .jeremy-robson-div .report-for-div .user-name {
+          display: block;
+          margin-top: 8px;
+          font-size: 30px;
+          font-weight: 300; }
+          main .jeremy-robson-div .report-for-div .user-name .span-block {
+            display: block;
+            margin-top: 5px; }
+      main .jeremy-robson-div .report-period {
+        flex-direction: column;
+        align-items: start;
+        padding: 33px 32px;
+        gap: 24px; }
+        main .jeremy-robson-div .report-period input {
+          position: absolute;
+          visibility: hidden; }
+  .hours {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start !important; }
+    .hours strong {
+      font-size: 35px !important;
+      font-weight: 100 !important; }
+    .hours .hours span {
+      font-size: 10px; } }
 
 .display-none {
   display: none; }

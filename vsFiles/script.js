@@ -23,10 +23,10 @@ const displayReports =function (data) {
         <div class="report">
 
             <div class="report-background">
-                <div class="background">
+                <div class="background ${el.background}-background">
 
                 </div>
-                <img src="../images/icon-work.svg" alt="">
+                <img src="../images/icon-${el.class}.svg" alt="">
             </div>
 
             <div class="report-details">

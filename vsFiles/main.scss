@@ -3,6 +3,7 @@
 
 body {
     background-color: #0E1323;
+    font-family: "Rubik", sans-serif;
     color: #FFFFFF;
 }
 
@@ -22,7 +23,8 @@ body {
 
 
 main {
-
+    max-width: 425px;
+    margin: auto;
     padding: 81px 24px;
     box-sizing: border-box;
 
@@ -64,7 +66,7 @@ main {
 
         & div {
 
-            & span {
+            & .report-for-span {
                 display: block;
                 @include span-15px;
             }
@@ -121,6 +123,27 @@ main {
             // border-radius: 15px;
         }
 
+        .sky-blue-background {
+            background-color: #55C2E6;
+        }
+
+        .pink-background {
+            background-color: #FF5E7D;
+        }
+
+        .green-background {
+            background-color: #4BCF82;
+        }
+
+        .purple-background {
+            background-color: #7335D2;
+        }
+
+        .yellow-background {
+            background-color: #F1C75B;
+        }
+
+
         & img {
             position: absolute;
             z-index: 2;
@@ -159,14 +182,91 @@ main {
             }
         }
     }
-    
 
-    // .report-details {
-    //     background-color: red;
-
-    // }
 }
 
+
+
+
+
+@media only screen and (min-width: 750px) {
+    
+    main {
+        max-width: 750px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .jeremy-robson-div {
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+            height: 100% ;
+
+
+           .report-for-div {
+
+            width: 100%;
+            padding: 38px 0px 80px 32px;
+            flex-direction: column;
+            align-items: start;
+            gap: 43px;
+            border-radius: 15px;
+    
+            position: absolute;
+            top: 0px;
+
+            .user-name {
+                display: block;
+                margin-top: 8px;
+                font-size: 30px;
+                font-weight: 300;
+
+                .span-block {
+                    display: block;
+                    margin-top: 5px;
+                }
+            }
+
+           } 
+
+            .report-period {
+                flex-direction: column;
+                align-items: start;
+                padding: 33px 32px;
+                gap: 24px;
+    
+                & input {
+                    position: absolute;
+                    visibility: hidden;
+                }
+    
+            }   
+
+
+        }
+
+
+    }
+
+    .hours {
+        flex-direction: column;
+        gap: 10px;
+        align-items: start !important;
+
+       
+
+        strong {
+            font-size: 35px !important;
+            font-weight: 100 !important;
+        }
+        
+    
+        .hours span {
+            font-size: 10px;
+        }
+    }
+    
+}
 
 
 
