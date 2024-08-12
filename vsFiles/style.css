@@ -8,17 +8,17 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px; }
-  main .div-gen {
+  main .jeremy-robson-div {
+    position: relative;
     width: 100%;
     height: 203px;
     border-radius: 15px;
     background-color: #1C204B;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: start; }
-  main .jeremy-robson-div {
-    position: relative; }
   main .report-for-div {
     background-color: #5747EA;
     width: 100%;
@@ -53,3 +53,53 @@ main {
     main .report-period input {
       position: absolute;
       visibility: hidden; }
+
+.report {
+  width: 100%;
+  height: 160px;
+  border-radius: 15px;
+  background-color: #1C204B;
+  position: relative; }
+  .report .report-background {
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative; }
+    .report .report-background .background {
+      width: 100%;
+      height: 100%;
+      background-color: #ff8b64;
+      position: absolute;
+      z-index: 3;
+      opacity: 0.8; }
+    .report .report-background img {
+      position: absolute;
+      z-index: 2;
+      right: 18px;
+      top: -15px; }
+  .report .report-details {
+    background-color: #1C204B;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 28px 24px;
+    box-sizing: border-box; }
+    .report .report-details div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .report .report-details div:last-child {
+      margin-top: 8px; }
+      .report .report-details div:last-child strong {
+        font-size: 32px;
+        font-weight: 400;
+        color: #FFFFFF; }
+      .report .report-details div:last-child span {
+        font-size: 15px;
+        font-weight: 400;
+        color: #BBC0FF; }
+
+.display-none {
+  display: none; }
