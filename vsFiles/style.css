@@ -56,6 +56,12 @@ main {
     main .report-period input {
       position: absolute;
       visibility: hidden; }
+    main .report-period label {
+      cursor: pointer;
+      color: #7078C9;
+      transition: all 0.2s; }
+      main .report-period label:hover {
+        color: #FFFFFF; }
 
 .report {
   width: 100%;
@@ -193,3 +199,6 @@ main {
 
 .display-none {
   display: none; }
+
+.color-white {
+  color: #FFFFFF !important; }

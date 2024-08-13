@@ -96,6 +96,17 @@ main {
             visibility: hidden;
         }
 
+        & label {
+            cursor: pointer;
+            color: #7078C9;
+            transition: all 0.2s;
+
+            &:hover {
+                color: #FFFFFF
+            }
+
+        }
+
     }
 
 }
@@ -328,5 +339,9 @@ main {
 
 .display-none {
     display: none;
+}
+
+.color-white {
+    color: #FFFFFF !important;
 }
 
